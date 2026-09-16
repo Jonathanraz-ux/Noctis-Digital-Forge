@@ -1,0 +1,48 @@
+<svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0a0a10"/>
+  <defs>
+    <linearGradient id="mlg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#0a0a10"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#mlg)"/>
+  <!-- Sun/moon -->
+  <circle cx="480" cy="80" r="30" fill="rgba(0,255,153,0.06)"/>
+  <circle cx="480" cy="80" r="20" fill="rgba(0,255,153,0.1)"/>
+  <circle cx="480" cy="80" r="10" fill="rgba(0,255,153,0.15)"/>
+  <!-- Sky -->
+  <rect x="0" y="0" width="600" height="200" fill="rgba(0,255,153,0.02)"/>
+  <!-- Ground -->
+  <rect x="0" y="260" width="600" height="140" fill="#0a0a10"/>
+  <!-- Main lodge building -->
+  <rect x="180" y="160" width="240" height="130" rx="6" fill="#12121a" stroke="rgba(0,255,153,0.08)" stroke-width="1"/>
+  <!-- Roof -->
+  <path d="M160 160 L300 110 L440 160" stroke="rgba(0,255,153,0.2)" stroke-width="2" fill="none"/>
+  <path d="M180 160 L300 118 L420 160" fill="#0d0d14"/>
+  <!-- Entrance -->
+  <rect x="270" y="245" width="60" height="45" rx="6" fill="#0a0a10" stroke="rgba(0,255,153,0.06)" stroke-width="1"/>
+  <circle cx="300" cy="267" r="10" fill="rgba(255,215,0,0.1)"/>
+  <!-- Windows -->
+  <rect x="208" y="200" width="30" height="35" rx="3" fill="rgba(0,255,153,0.04)" stroke="rgba(0,255,153,0.06)" stroke-width="0.5"/>
+  <rect x="255" y="200" width="30" height="35" rx="3" fill="rgba(0,255,153,0.04)" stroke="rgba(0,255,153,0.06)" stroke-width="0.5"/>
+  <rect x="315" y="200" width="30" height="35" rx="3" fill="rgba(0,255,153,0.04)" stroke="rgba(0,255,153,0.06)" stroke-width="0.5"/>
+  <rect x="362" y="200" width="30" height="35" rx="3" fill="rgba(0,255,153,0.04)" stroke="rgba(0,255,153,0.06)" stroke-width="0.5"/>
+  <!-- Left extension -->
+  <rect x="130" y="200" width="50" height="90" rx="4" fill="#0d0d14" stroke="rgba(0,255,153,0.04)" stroke-width="1"/>
+  <rect x="142" y="222" width="26" height="26" rx="3" fill="rgba(0,255,153,0.03)"/>
+  <!-- Right terrace -->
+  <rect x="420" y="220" width="70" height="70" rx="6" fill="#0d0d14" stroke="rgba(0,255,153,0.04)" stroke-width="1"/>
+  <rect x="430" y="240" width="20" height="20" rx="3" fill="rgba(0,255,153,0.03)"/>
+  <rect x="460" y="240" width="20" height="20" rx="3" fill="rgba(0,255,153,0.03)"/>
+  <!-- Pool / water -->
+  <ellipse cx="300" cy="330" rx="90" ry="12" fill="rgba(0,255,153,0.03)" stroke="rgba(0,255,153,0.04)" stroke-width="0.5"/>
+  <ellipse cx="300" cy="330" rx="70" ry="8" fill="rgba(0,255,153,0.02)"/>
+  <!-- Trees -->
+  <circle cx="100" cy="240" r="25" fill="rgba(0,255,153,0.03)"/>
+  <circle cx="95" cy="230" r="18" fill="rgba(0,255,153,0.02)"/>
+  <circle cx="500" cy="250" r="22" fill="rgba(0,255,153,0.03)"/>
+  <circle cx="505" cy="240" r="16" fill="rgba(0,255,153,0.02)"/>
+  <!-- Path -->
+  <path d="M300 290 Q300 310 280 330 Q260 350 300 355" stroke="rgba(0,255,153,0.04)" stroke-width="2" fill="none"/>
+  <!-- Text label -->
+  <rect x="200" y="370" width="200" height="20" rx="4" fill="rgba(0,255,153,0.04)"/>
+  <rect x="230" y="377" width="140" height="6" rx="3" fill="#00ff99" opacity="0.15"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0a0a10"/>
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#0a0a10"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#hg)"/>
+  <!-- Sky gradient -->
+  <rect x="0" y="0" width="600" height="180" fill="rgba(0,255,153,0.02)"/>
+  <!-- Stars -->
+  <circle cx="50" cy="30" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="150" cy="50" r="1.5" fill="#fff" opacity="0.2"/>
+  <circle cx="300" cy="25" r="1" fill="#fff" opacity="0.35"/>
+  <circle cx="450" cy="40" r="1" fill="#fff" opacity="0.25"/>
+  <circle cx="550" cy="20" r="1.5" fill="#fff" opacity="0.2"/>
+  <circle cx="200" cy="60" r="0.8" fill="#fff" opacity="0.3"/>
+  <circle cx="500" cy="55" r="0.8" fill="#fff" opacity="0.25"/>
+  <!-- Main building -->
+  <rect x="180" y="140" width="240" height="220" rx="4" fill="#12121a" stroke="rgba(0,255,153,0.08)" stroke-width="1"/>
+  <!-- Left wing -->
+  <rect x="140" y="180" width="50" height="180" rx="3" fill="#0d0d14" stroke="rgba(0,255,153,0.06)" stroke-width="1"/>
+  <!-- Right wing -->
+  <rect x="410" y="180" width="50" height="180" rx="3" fill="#0d0d14" stroke="rgba(0,255,153,0.06)" stroke-width="1"/>
+  <!-- Roof -->
+  <path d="M160 140 L300 90 L440 140" stroke="rgba(0,255,153,0.2)" stroke-width="1.5" fill="none"/>
+  <path d="M180 140 L298 98 L416 140" fill="#12121a"/>
+  <!-- Entrance -->
+  <rect x="270" y="300" width="60" height="60" rx="4" fill="#0a0a10" stroke="rgba(0,255,153,0.08)" stroke-width="1"/>
+  <circle cx="300" cy="330" r="10" fill="rgba(255,215,0,0.15)"/>
+  <!-- Windows left -->
+  <rect x="200" y="185" width="25" height="35" rx="3" fill="rgba(0,255,153,0.06)"/>
+  <rect x="245" y="185" width="25" height="35" rx="3" fill="rgba(0,255,153,0.04)"/>
+  <rect x="200" y="240" width="25" height="35" rx="3" fill="rgba(0,255,153,0.08)"/>
+  <rect x="245" y="240" width="25" height="35" rx="3" fill="rgba(0,255,153,0.04)"/>
+  <!-- Windows right -->
+  <rect x="330" y="185" width="25" height="35" rx="3" fill="rgba(0,255,153,0.06)"/>
+  <rect x="375" y="185" width="25" height="35" rx="3" fill="rgba(0,255,153,0.04)"/>
+  <rect x="330" y="240" width="25" height="35" rx="3" fill="rgba(0,255,153,0.08)"/>
+  <rect x="375" y="240" width="25" height="35" rx="3" fill="rgba(0,255,153,0.04)"/>
+  <!-- Pool -->
+  <ellipse cx="300" cy="370" rx="70" ry="12" fill="rgba(0,255,153,0.04)" stroke="rgba(0,255,153,0.06)" stroke-width="1"/>
+  <!-- Palm trees -->
+  <line x1="100" y1="360" x2="100" y2="300" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <path d="M100 300 Q80 285 70 295" stroke="#00ff99" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.15"/>
+  <path d="M100 300 Q120 285 130 295" stroke="#00ff99" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.15"/>
+  <line x1="520" y1="360" x2="520" y2="310" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+  <path d="M520 310 Q500 295 490 305" stroke="#00ff99" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.15"/>
+  <path d="M520 310 Q540 295 550 305" stroke="#00ff99" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.15"/>
+  <!-- Ambient glow -->
+  <circle cx="300" cy="250" r="140" fill="rgba(0,255,153,0.02)"/>
+</svg>

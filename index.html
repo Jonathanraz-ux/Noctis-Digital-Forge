@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noctis Digital Forge — Agence Dev Web Premium à Madagascar</title>
+<meta name="description" content="Agence dev web mada : création & refonte de sites web premium à Madagascar. Sites rapides, modernes et qui convertissent pour hôtels, restaurants et PME. Audit gratuit.">
+<meta name="keywords" content="dev web mada, agence dev web mada, sous traitant dev web mada, developpeur web madagascar, agence web premium, creation site web madagascar, refonte site web, agence web mada">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Noctis Digital Forge">
+<link rel="canonical" href="https://noctis-digital-forge.netlify.app/">
+<meta name="theme-color" content="#07070a">
+<meta name="geo.region" content="MG">
+<meta name="geo.placename" content="Madagascar">
+<link rel="icon" type="image/x-icon" href="favicon.ico.jpeg">
+<link rel="apple-touch-icon" href="favicon.ico.jpeg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Noctis Digital Forge">
+<meta property="og:locale" content="fr_MG">
+<meta property="og:title" content="Noctis Digital Forge — Agence Dev Web Premium à Madagascar">
+<meta property="og:description" content="Agence dev web mada : création & refonte de sites web premium à Madagascar. Sites rapides, modernes et qui convertissent pour hôtels, restaurants et PME. Audit gratuit.">
+<meta property="og:url" content="https://noctis-digital-forge.netlify.app/">
+<meta property="og:image" content="https://noctis-digital-forge.netlify.app/public/images/hero-section.jpg">
+<meta property="og:image:width" content="4000">
+<meta property="og:image:height" content="6000">
+<meta property="og:image:alt" content="Noctis Digital Forge — Agence dev web premium à Madagascar">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Noctis Digital Forge — Agence Dev Web Premium à Madagascar">
+<meta name="twitter:description" content="Création & refonte de sites web premium à Madagascar. Sites rapides, modernes et qui convertissent. Audit gratuit.">
+<meta name="twitter:image" content="https://noctis-digital-forge.netlify.app/public/images/hero-section.jpg">
+
+<meta name="google-site-verification" content="Pox4AtaW5l96pgUtJKxYa9LCcaalikTso9k-2JKIqsc" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="public/images/hero-section.jpg" fetchpriority="high">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+:root {
+  --primary: #00ff99;
+  --primary-dark: #00cc7a;
+  --primary-glow: rgba(0, 255, 153, 0.10);
+  --primary-subtle: rgba(0, 255, 153, 0.04);
+  --primary-grad: linear-gradient(135deg, #00ff99, #00cc7a);
+  --bg-dark: #07070a;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --bg-elevated: #121216;
+  --text-main: #f0f0f4;
+  --text-muted: #8a8a9a;
+  --text-dim: #55556a;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(0, 255, 153, 0.2);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 24px 64px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 24px 64px rgba(0, 255, 153, 0.06);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.3s var(--ease-out-expo);
+  --transition-med: 0.5s var(--ease-out-expo);
+  --radius-card: 24px;
+  --radius-sm: 14px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+::selection { background: var(--primary); color: var(--bg-dark); }
+a { color: inherit; text-decoration: none; }
+
+/* --- Nav --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 5%;
+  background: rgba(7, 7, 10, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: padding var(--transition-fast), background var(--transition-fast);
+}
+
+nav.nav-scrolled {
+  padding: 14px 5%;
+  background: rgba(7, 7, 10, 0.95);
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: var(--primary);
+  transition: opacity var(--transition-fast);
+}
+.logo:hover { opacity: 0.85; }
+.logo span { font-weight: 400; color: var(--text-dim); font-size: 14px; letter-spacing: 0; }
+
+.nav-links { display: flex; align-items: center; gap: 6px; }
+.nav-links a {
+  color: var(--text-muted); font-size: 13px; font-weight: 500;
+  padding: 8px 16px; border-radius: 8px;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+.nav-links a:hover { color: var(--text-main); background: rgba(255,255,255,0.04); }
+.nav-links a.active { color: var(--primary); background: var(--primary-subtle); }
+.nav-links .nav-cta {
+  background: var(--primary); color: #000; font-weight: 700;
+  padding: 10px 22px; border-radius: 100px; margin-left: 8px;
+}
+.nav-links .nav-cta:hover { background: var(--text-main); color: #000; }
+
+.hamburger {
+  display: none;
+  flex-direction: column; justify-content: space-between;
+  width: 24px; height: 18px;
+  background: none; border: none; cursor: pointer; padding: 0; z-index: 1001;
+}
+.hamburger span {
+  display: block; width: 100%; height: 2px;
+  background: var(--text-main); border-radius: 2px;
+  transition: transform 0.35s var(--ease-out-expo), opacity 0.25s var(--ease-out-expo);
+  transform-origin: center;
+}
+.hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* --- Hero Premium --- */
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 5% 80px;
+  position: relative;
+  overflow: hidden;
+  background: #050508;
+}
+
+#forgeCanvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 30%; left: 50%;
+  width: 900px; height: 900px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0,255,153,0.06) 0%, transparent 50%);
+  pointer-events: none; z-index: 0;
+}
+
+header > * { position: relative; z-index: 2; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center; gap: 6px;
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.2px;
+  color: var(--primary);
+  background: rgba(0, 255, 153, 0.06);
+  border: 1px solid rgba(0, 255, 153, 0.1);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeInUp 0.6s var(--ease-out-expo) 0.3s forwards;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.15;
+  margin: 0 0 20px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  opacity: 0;
+  animation: fadeInUp 0.7s var(--ease-out-expo) 0.5s forwards;
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+.hero-sub {
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 0 36px;
+  line-height: 1.7;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeInUp 0.7s var(--ease-out-expo) 0.7s forwards;
+}
+
+.hero-actions {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  opacity: 0;
+  animation: fadeInUp 0.7s var(--ease-out-expo) 0.9s forwards;
+}
+
+.hero-image-wrap {
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  border: 1px solid var(--border-subtle);
+  opacity: 0;
+  animation: fadeInUp 0.8s var(--ease-out-expo) 0.6s forwards;
+}
+
+.hero-image-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(0,255,153,0.08), transparent 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-image-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 80px rgba(0,0,0,0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-image-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+
+/* Images placeholder - replaced by SVGs */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 16px 34px; border-radius: 100px;
+  font-weight: 600; font-size: 15px;
+  transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s var(--ease-out-expo), background 0.3s;
+  cursor: pointer; border: none; text-decoration: none;
+  position: relative; overflow: hidden;
+}
+.btn-primary {
+  background: var(--primary); color: #000;
+  box-shadow: 0 4px 20px rgba(0,255,153,0.2);
+}
+.btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 40px rgba(0,255,153,0.3); }
+.btn-secondary {
+  background: transparent; color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+.btn-secondary:hover { border-color: var(--border-hover); color: var(--text-main); background: rgba(255,255,255,0.03); }
+.btn-whatsapp { background: #25D366; color: #fff; }
+.btn-whatsapp:hover { transform: scale(1.05); box-shadow: 0 8px 32px rgba(37,211,102,0.3); }
+.btn-full { width: 100%; }
+
+/* --- Section Layout --- */
+.container { padding: 120px 5%; max-width: 1200px; margin: auto; }
+
+.section-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--primary); margin-bottom: 14px;
+}
+.text-center { text-align: center; }
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4.5vw, 48px);
+  margin: 0 0 20px;
+  font-weight: 700; letter-spacing: -1px; line-height: 1.15;
+}
+.section-title-left {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4.5vw, 48px);
+  margin: 0 0 20px;
+  font-weight: 700; letter-spacing: -1px; line-height: 1.15;
+  padding-left: 28px;
+  position: relative;
+}
+.section-title-left::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 6px; bottom: 6px;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--primary), transparent);
+  border-radius: 2px;
+}
+.section-desc {
+  font-size: 16px; color: var(--text-muted);
+  max-width: 620px; line-height: 1.7; margin: 0 0 56px;
+}
+.text-center .section-desc { margin-left: auto; margin-right: auto; }
+
+/* --- Bento Problem Grid --- */
+.bento-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.bento-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bento-text-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 40px 36px;
+  backdrop-filter: blur(12px);
+}
+
+.bento-image-block {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  background: linear-gradient(160deg, #0d0d14 0%, #14141e 100%);
+  border: 1px solid var(--border-subtle);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.bento-image-block img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.bento-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.bento-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 28px 26px;
+  transition: transform 0.4s var(--ease-out-expo), border-color 0.3s, background 0.3s;
+  backdrop-filter: blur(12px);
+  position: relative; overflow: hidden;
+}
+
+.bento-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), var(--primary-glow), transparent 40%);
+  opacity: 0; transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.bento-card:hover::before { opacity: 1; }
+.bento-card:hover { transform: translateY(-4px); border-color: var(--border-hover); background: var(--bg-card-hover); }
+.bento-card > * { position: relative; z-index: 1; }
+
+.bento-card .card-icon {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: rgba(0,255,153,0.06);
+  border: 1px solid rgba(0,255,153,0.08);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 14px;
+  color: var(--primary);
+}
+
+.bento-card .card-icon i { width: 20px; height: 20px; stroke-width: 2px; }
+.bento-card h3 {
+  font-family: var(--font-heading);
+  font-size: 16px; font-weight: 600;
+  margin: 0 0 8px; letter-spacing: -0.3px;
+}
+.bento-card p { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+
+.bento-card.tall {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card.tall .bento-card-visual {
+  margin: 20px -26px -28px;
+  height: 100%; min-height: 200px;
+  background: linear-gradient(160deg, #0d0d14 0%, #14141e 100%);
+  display: flex; align-items: center; justify-content: center;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.bento-card.tall .bento-card-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.bento-card.span-2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bento-card.span-2 .bento-card-content { padding: 28px 26px; }
+
+.bento-card.span-2 .bento-card-visual {
+  height: 100%; min-height: 180px;
+  background: linear-gradient(160deg, #0d0d14 0%, #14141e 100%);
+  display: flex; align-items: center; justify-content: center;
+  border-left: 1px solid var(--border-subtle);
+}
+
+.bento-card.span-2 .bento-card-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* --- Solution --- */
+.solution-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+.solution-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 24px; }
+
+.solution-item { display: flex; gap: 18px; align-items: flex-start; }
+
+.solution-item-icon {
+  width: 40px; height: 40px; min-width: 40px;
+  border-radius: 12px;
+  background: var(--primary-subtle);
+  border: 1px solid rgba(0,255,153,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 700; color: var(--primary);
+}
+
+.solution-item h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+.solution-item p { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+
+/* --- Method --- */
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.method-grid::before {
+  content: '';
+  position: absolute;
+  top: 44px; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(to right, var(--primary), transparent 60%);
+  opacity: 0.25;
+}
+
+.method-step { text-align: center; padding: 32px 20px; position: relative; }
+
+.method-number {
+  font-family: var(--font-heading);
+  font-size: 52px; font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(0, 255, 153, 0.25);
+  line-height: 1; margin-bottom: 16px;
+}
+
+.method-step h3 { font-family: var(--font-heading); font-size: 17px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.3px; }
+.method-step p { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+
+/* --- Offers --- */
+.offers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+.offer-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 40px 36px;
+  position: relative; overflow: hidden;
+  transition: transform 0.5s var(--ease-out-expo), border-color 0.4s;
+}
+
+.offer-card.featured {
+  border-color: rgba(0,255,153,0.12);
+  background: linear-gradient(160deg, rgba(0,255,153,0.04) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+.offer-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,255,153,0.3), transparent);
+}
+
+.offer-card:hover { transform: translateY(-6px); border-color: var(--border-hover); }
+
+.offer-badge {
+  display: inline-block;
+  padding: 4px 14px; border-radius: 100px;
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  background: var(--primary-subtle);
+  color: var(--primary);
+  border: 1px solid rgba(0,255,153,0.1);
+  margin-bottom: 16px;
+}
+
+.offer-card h3 { font-family: var(--font-heading); font-size: 22px; font-weight: 700; margin: 0 0 12px; letter-spacing: -0.5px; }
+.offer-card > p { font-size: 14px; color: var(--text-muted); margin: 0 0 20px; line-height: 1.6; }
+
+.offer-price {
+  font-family: var(--font-heading);
+  font-size: 32px; font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+.offer-price small { font-size: 14px; font-weight: 400; color: var(--text-muted); }
+
+.offer-list { list-style: none; padding: 0; margin: 0 0 28px; }
+.offer-list li {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 7px 0; font-size: 14px;
+  color: var(--text-muted); line-height: 1.5;
+}
+.offer-list li::before { content: '✓'; color: var(--primary); font-weight: 700; font-size: 14px; margin-top: 1px; }
+
+/* --- Services (original) --- */
+.grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.grid-portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
+
+.card {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.5s var(--ease-out-expo), border-color 0.4s, background 0.3s;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(800px circle at var(--mx,50%) var(--my,50%), var(--primary-glow), transparent 40%);
+  opacity: 0; transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.card:hover::before { opacity: 1; }
+.card:hover { transform: translateY(-6px); border-color: var(--border-hover); background: var(--bg-card-hover); }
+.card > * { position: relative; z-index: 1; }
+
+.card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 14px; margin-bottom: 16px; display: block; }
+
+.card h2, .card h3 {
+  font-family: var(--font-heading);
+  margin: 0 0 12px;
+  font-size: 22px; font-weight: 600; letter-spacing: -0.5px;
+}
+
+.card p { color: var(--text-muted); font-size: 15px; line-height: 1.7; margin: 0 0 auto; }
+
+.card ul { list-style: none; padding: 0; margin: 0 0 auto; }
+.card ul li {
+  color: var(--text-muted); font-size: 15px;
+  padding: 6px 0 6px 20px;
+  position: relative; line-height: 1.6;
+}
+.card ul li::before {
+  content: '';
+  position: absolute; left: 0; top: 14px;
+  width: 6px; height: 6px;
+  background: var(--primary); border-radius: 50%; opacity: 0.6;
+}
+
+.price { color: var(--primary); font-weight: 700; font-size: 26px; margin-top: auto; padding-top: 20px; }
+
+/* --- Portfolio Visual (new) --- */
+.portfolio-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.portfolio-visual-card {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.5s var(--ease-out-expo), border-color 0.4s;
+  background: var(--bg-card);
+}
+
+.portfolio-visual-card:hover { transform: translateY(-6px); border-color: var(--border-hover); }
+
+.portfolio-visual-card .card-image {
+  aspect-ratio: 16/11;
+  background: linear-gradient(160deg, #0d0d14 0%, #14141e 100%);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+
+.portfolio-visual-card .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.portfolio-visual-card .card-image .card-image-label {
+  position: absolute;
+  top: 14px; left: 14px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+
+.portfolio-visual-card .card-image .card-image-label.green {
+  color: var(--primary);
+  border-color: rgba(0,255,153,0.15);
+  background: rgba(0,0,0,0.5);
+}
+
+.portfolio-visual-card .card-body { padding: 24px 24px 28px; }
+.portfolio-visual-card .card-body h3 {
+  font-family: var(--font-heading);
+  font-size: 17px; font-weight: 600;
+  margin: 0 0 8px; letter-spacing: -0.3px;
+}
+.portfolio-visual-card .card-body p { font-size: 14px; color: var(--text-muted); margin: 0 0 16px; line-height: 1.6; }
+
+/* --- Why Us --- */
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 32px 28px;
+  transition: transform 0.5s var(--ease-out-expo), border-color 0.4s, background 0.3s;
+  position: relative; overflow: hidden;
+}
+
+.why-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), var(--primary-glow), transparent 40%);
+  opacity: 0; transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.why-card:hover::before { opacity: 1; }
+.why-card:hover { transform: translateY(-6px); border-color: var(--border-hover); background: var(--bg-card-hover); }
+.why-card > * { position: relative; z-index: 1; }
+
+.why-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: rgba(0,255,153,0.06);
+  border: 1px solid rgba(0,255,153,0.08);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px; color: var(--primary);
+}
+.why-icon i { width: 22px; height: 22px; stroke-width: 2px; }
+.why-card h3 { font-family: var(--font-heading); font-size: 16px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.3px; }
+.why-card p { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+
+/* --- Testimonials --- */
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 32px 28px;
+  transition: transform 0.5s var(--ease-out-expo), border-color 0.4s, background 0.3s;
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), var(--primary-glow), transparent 40%);
+  opacity: 0; transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.testimonial-card:hover::before { opacity: 1; }
+.testimonial-card:hover { transform: translateY(-6px); border-color: var(--border-hover); background: var(--bg-card-hover); }
+.testimonial-card > * { position: relative; z-index: 1; }
+
+.testimonial-stars { display: flex; gap: 3px; margin-bottom: 18px; color: var(--primary); }
+.testimonial-stars i { width: 16px; height: 16px; fill: var(--primary); stroke: none; }
+
+.testimonial-quote {
+  font-size: 15px; line-height: 1.75; color: var(--text-main);
+  margin: 0 0 24px; flex: 1;
+  font-style: italic;
+}
+
+.testimonial-quote::before { content: '\201C'; color: var(--primary); font-size: 28px; font-family: Georgia, serif; line-height: 0; vertical-align: -6px; margin-right: 4px; }
+.testimonial-quote::after { content: '\201D'; color: var(--primary); font-size: 28px; font-family: Georgia, serif; line-height: 0; vertical-align: -6px; margin-left: 2px; }
+
+.testimonial-author { display: flex; align-items: center; gap: 14px; }
+
+.testimonial-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(0,255,153,0.08);
+  border: 1px solid rgba(0,255,153,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-heading); font-weight: 700; font-size: 16px; color: var(--primary);
+  min-width: 44px;
+}
+
+.testimonial-info h4 { font-family: var(--font-heading); font-size: 15px; font-weight: 600; margin: 0 0 3px; letter-spacing: -0.3px; }
+.testimonial-info p { font-size: 13px; color: var(--text-dim); margin: 0; }
+
+/* --- Final CTA --- */
+.final-cta-wrap {
+  background: linear-gradient(160deg, rgba(0,255,153,0.04) 0%, rgba(255,255,255,0.015) 100%);
+  border: 1px solid rgba(0,255,153,0.08);
+  border-radius: var(--radius-card);
+  padding: 64px;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+
+.final-cta-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,255,153,0.25), transparent);
+}
+
+.final-cta-wrap > * { position: relative; z-index: 1; }
+
+.final-cta-wrap h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.5vw, 38px);
+  font-weight: 700; margin: 0 0 16px; letter-spacing: -1px;
+}
+
+.final-cta-wrap > p {
+  font-size: 16px; color: var(--text-muted);
+  max-width: 520px; margin: 0 auto 32px; line-height: 1.7;
+}
+
+.final-cta-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 40px; }
+
+.contact-form { max-width: 540px; margin: 0 auto; text-align: left; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 14px; }
+
+.form-group label {
+  display: block; font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text-dim); margin-bottom: 6px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 14px;
+  transition: border-color var(--transition-fast);
+  outline: none;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-group select { appearance: none; cursor: pointer; }
+.form-group select option { background: var(--bg-elevated); color: var(--text-main); }
+
+.form-submit {
+  width: 100%; padding: 16px;
+  border-radius: var(--radius-sm);
+  border: none; background: var(--primary); color: #000;
+  font-size: 16px; font-weight: 700; cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.form-submit:hover { transform: scale(1.02); background: #fff; box-shadow: 0 8px 32px rgba(0,255,153,0.25); }
+
+/* --- Contact (original) --- */
+.contact-card {
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: var(--radius-card);
+  background: linear-gradient(160deg, rgba(255,255,255,0.02) 0%, rgba(0,255,153,0.03) 100%);
+  border: 1px solid var(--border-subtle);
+  position: relative; overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at 50% 0%, var(--primary-glow), transparent 60%);
+  pointer-events: none;
+}
+
+.contact-card * { position: relative; z-index: 1; }
+
+.contact-card h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 38px);
+  margin: 0 0 16px; font-weight: 600; letter-spacing: -1px;
+}
+
+.contact-card > p {
+  color: var(--text-muted); font-size: 16px;
+  max-width: 480px; margin: 0 auto 32px; line-height: 1.7;
+}
+
+.contact-actions { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.contact-info { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.contact-info a { color: var(--text-muted); font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: color var(--transition-fast); }
+.contact-info a:hover { color: var(--primary); }
+.contact-info .separator { color: var(--text-dim); }
+
+/* --- Footer --- */
+.footer { text-align: center; padding: 60px 20px 40px; background: #050508; border-top: 1px solid var(--border-subtle); }
+.footer p { margin: 0; font-size: 15px; color: var(--text-muted); }
+.footer .copyright { font-size: 12px; color: var(--text-dim); margin-top: 12px; }
+.footer-divider { width: 40px; height: 2px; background: var(--primary); opacity: 0.3; margin: 0 auto 20px; border-radius: 1px; }
+
+/* --- Scroll Reveal --- */
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+.reveal { transform: translateY(40px); }
+.reveal-left { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+.reveal-scale { transform: scale(0.95); }
+.reveal.visible, .reveal-left.visible, .reveal-right.visible, .reveal-scale.visible {
+  opacity: 1; transform: translateY(0) translateX(0) scale(1);
+}
+
+.stagger-grid > * {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+.stagger-grid.visible > * { opacity: 1; transform: translateY(0); }
+.stagger-grid.visible > *:nth-child(1) { transition-delay: 0s; }
+.stagger-grid.visible > *:nth-child(2) { transition-delay: 0.1s; }
+.stagger-grid.visible > *:nth-child(3) { transition-delay: 0.2s; }
+.stagger-grid.visible > *:nth-child(4) { transition-delay: 0.3s; }
+.stagger-grid.visible > *:nth-child(5) { transition-delay: 0.4s; }
+.stagger-grid.visible > *:nth-child(6) { transition-delay: 0.5s; }
+
+.grid-services .card, .grid-portfolio .card, .template-grid .card {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+.grid-services.visible .card, .grid-portfolio.visible .card, .template-grid.visible .card { opacity: 1; transform: translateY(0); }
+.grid-services.visible .card:nth-child(1), .grid-portfolio.visible .card:nth-child(1), .template-grid.visible .card:nth-child(1) { transition-delay: 0s; }
+.grid-services.visible .card:nth-child(2), .grid-portfolio.visible .card:nth-child(2), .template-grid.visible .card:nth-child(2) { transition-delay: 0.1s; }
+.grid-services.visible .card:nth-child(3), .grid-portfolio.visible .card:nth-child(3), .template-grid.visible .card:nth-child(3) { transition-delay: 0.2s; }
+.grid-portfolio.visible .card:nth-child(4) { transition-delay: 0.3s; }
+
+.testimonials-grid > * {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+.testimonials-grid.visible > * { opacity: 1; transform: translateY(0); }
+.testimonials-grid.visible > *:nth-child(1) { transition-delay: 0s; }
+.testimonials-grid.visible > *:nth-child(2) { transition-delay: 0.1s; }
+.testimonials-grid.visible > *:nth-child(3) { transition-delay: 0.2s; }
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-image-wrap { max-width: 500px; margin: 0 auto; }
+  .bento-wrap { grid-template-columns: 1fr; }
+  .bento-image-block { display: none; }
+  .method-grid { grid-template-columns: repeat(2, 1fr); }
+  .method-grid::before { display: none; }
+  .solution-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-visual-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 18px 5%; }
+  nav.nav-scrolled { padding: 14px 5%; }
+  .hamburger { display: flex; }
+
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 100%; max-width: 360px;
+    height: 100vh;
+    background: rgba(7,7,10,0.98);
+    backdrop-filter: blur(24px);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    gap: 12px;
+    transition: right 0.5s var(--ease-out-expo);
+    z-index: 1000;
+    border-left: 1px solid var(--border-subtle);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { margin: 0; font-size: 18px; padding: 14px 40px; width: 100%; max-width: 280px; text-align: center; border-radius: 12px; }
+  .nav-links a.nav-cta { margin-left: 0; margin-top: 8px; }
+
+  header { padding: 100px 5% 60px; min-height: 90vh; }
+  .hero-grid { text-align: center; }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-image-wrap { width: 100%; }
+
+  .container { padding: 80px 5%; }
+
+  .bento-right { grid-template-columns: 1fr; }
+  .bento-card.span-2 { grid-template-columns: 1fr; }
+  .bento-card.span-2 .bento-card-visual { border-left: none; border-top: 1px solid var(--border-subtle); min-height: 140px; }
+  .bento-card.tall { grid-row: auto; }
+
+  .offers-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .portfolio-visual-grid { grid-template-columns: 1fr; }
+  .final-cta-wrap { padding: 40px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-card { padding: 40px 24px; }
+  .contact-info { flex-direction: column; gap: 12px; align-items: center; }
+  .contact-info .separator { display: none; }
+  .method-grid { grid-template-columns: 1fr; }
+  .grid-services, .grid-portfolio, .template-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .logo { font-size: 20px; }
+  .hero-title { font-size: 28px; letter-spacing: -0.5px; }
+  .hero-sub { font-size: 15px; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 320px; }
+  .card { padding: 28px 24px; }
+  .card h2, .card h3 { font-size: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .reveal, .reveal-left, .reveal-right, .reveal-scale,
+  .stagger-grid > *, .grid-services .card, .grid-portfolio .card, .template-grid .card,
+  .hero-label, .hero-title, .hero-sub, .hero-actions, .hero-image-wrap {
+    opacity: 1 !important; transform: none !important; animation: none !important;
+  }
+}
+
+/* --- Lightbox --- */
+.lightbox-overlay {
+  position: fixed; inset: 0; z-index: 99999;
+  background: rgba(0,0,0,0.92); backdrop-filter: blur(20px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 40px;
+}
+.lightbox-overlay.active { opacity: 1; pointer-events: all; }
+.lightbox-overlay img {
+  max-width: 90vw; max-height: 90vh;
+  border-radius: 14px; box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute; top: 24px; right: 32px;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
+  color: #fff; font-size: 22px; line-height: 48px; text-align: center;
+  cursor: pointer; transition: background 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.12); }
+.portfolio-visual-card .card-image { cursor: zoom-in; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://noctis-digital-forge.netlify.app/#organization",
+      "name": "Noctis Digital Forge",
+      "alternateName": "Agence Dev Web à Madagascar",
+      "description": "Agence de développement web à Madagascar : création et refonte de sites web premium, rapides et performants pour PME, hôtels, restaurants et indépendants.",
+      "url": "https://noctis-digital-forge.netlify.app/",
+      "logo": "https://noctis-digital-forge.netlify.app/favicon.ico.jpeg",
+      "image": "https://noctis-digital-forge.netlify.app/public/images/hero-section.jpg",
+      "email": "noctisdigitalforge@gmail.com",
+      "telephone": "+261349320184",
+      "priceRange": "150€ - 500€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MG",
+        "addressLocality": "Antananarivo"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Madagascar"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Razafiarijaona Jonathan"
+      },
+      "knowsAbout": [
+        "Développement web",
+        "Création de site web",
+        "Refonte de site web",
+        "Design UI/UX",
+        "Optimisation SEO",
+        "Dashboard admin"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "150",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Refonte Express de site web",
+            "description": "Refonte complète d'un site simple : vitrine, restaurant, service local. Design moderne, responsive, intégration WhatsApp et formulaire de contact.",
+            "url": "https://noctis-digital-forge.netlify.app/#offres",
+            "serviceType": "Refonte de site web",
+            "provider": { "@id": "https://noctis-digital-forge.netlify.app/#organization" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "400",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Site web + Dashboard Admin",
+            "description": "Site web premium avec dashboard admin connecté (Supabase) pour gérer contenus, réservations et données en autonomie. Idéal pour hôtels, restaurants et résidences.",
+            "url": "https://noctis-digital-forge.netlify.app/#offres",
+            "serviceType": "Site web avec dashboard admin",
+            "provider": { "@id": "https://noctis-digital-forge.netlify.app/#organization" }
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Stratégie Entrepreneur",
+          "description": "Sites haute performance pour coachs, experts et commerces locaux cherchant une présence dominante.",
+          "url": "https://noctis-digital-forge.netlify.app/#services",
+          "serviceType": "Stratégie web",
+          "provider": { "@id": "https://noctis-digital-forge.netlify.app/#organization" }
+        },
+        {
+          "@type": "Service",
+          "name": "Conversion Intelligente",
+          "description": "Automatisation via chatbots, tunnels WhatsApp et formulaires optimisés pour convertir vos visiteurs.",
+          "url": "https://noctis-digital-forge.netlify.app/#services",
+          "serviceType": "Optimisation de conversion",
+          "provider": { "@id": "https://noctis-digital-forge.netlify.app/#organization" }
+        },
+        {
+          "@type": "Service",
+          "name": "Standard Premium",
+          "description": "UI/UX design sur mesure, optimisation SEO & Mobile, intégration écosystème WhatsApp, hébergement et mise en ligne.",
+          "url": "https://noctis-digital-forge.netlify.app/#services",
+          "serviceType": "Design UI/UX et développement web",
+          "provider": { "@id": "https://noctis-digital-forge.netlify.app/#organization" }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://noctis-digital-forge.netlify.app/#website",
+      "url": "https://noctis-digital-forge.netlify.app/",
+      "name": "Noctis Digital Forge — Agence Dev Web Premium à Madagascar",
+      "inLanguage": "fr-MG",
+      "publisher": { "@id": "https://noctis-digital-forge.netlify.app/#organization" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+  <a href="#main-content" style="position:absolute;left:-9999px;top:-9999px;opacity:0;">Aller au contenu</a>
+
+  <!-- ===== NAV ===== -->
+  <nav aria-label="Navigation principale">
+    <a href="#" class="logo">NOCTIS<span> | Digital Forge</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#probleme">Problème</a>
+      <a href="#solution">Solution</a>
+      <a href="#offres">Offres</a>
+      <a href="#portfolio">Projets</a>
+      <a href="https://wa.me/261349320184" class="nav-cta" target="_blank">Audit gratuit</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header>
+    <canvas id="forgeCanvas"></canvas>
+    <div class="hero-bg-glow" aria-hidden="true"></div>
+
+    <div class="hero-grid">
+      <div>
+        <div class="hero-label">✦ Agence web premium</div>
+
+        <h1 class="hero-title">Nous transformons les sites dépassés en expériences <em>modernes qui convertissent</em>.</h1>
+
+        <p class="hero-sub">Design stratégique, développement propre et contenus pensés pour transformer vos visiteurs en clients.</p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/261349320184" class="btn btn-primary" target="_blank">Demander un audit gratuit →</a>
+          <a href="#portfolio" class="btn btn-secondary">Voir nos projets</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img src="public/images/hero-section.jpg" alt="Noctis Digital Forge — agence dev web premium à Madagascar" width="4000" height="6000" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== PROBLÈME (Bento) ===== -->
+    <section id="probleme" class="container">
+      <div class="section-tag reveal">✕ Diagnostic</div>
+      <h2 class="section-title-left reveal">Les signes que votre site vous freine</h2>
+      <p class="section-desc reveal">Votre site actuel vous coûte peut-être plus qu'il ne vous rapporte. Voici les signaux d'alarme.</p>
+
+      <div class="bento-wrap reveal">
+        <div class="bento-left">
+          <div class="bento-text-block">
+            <p style="color:var(--text-muted);font-size:15px;line-height:1.8;margin:0;">
+              Un site web, c'est souvent le premier contact entre vous et un client potentiel. 
+              Si ce premier contact est lent, moche ou cassé sur mobile — le client ne revient pas.
+            </p>
+          </div>
+          <div class="bento-image-block">
+            <img src="public/images/site-lent.png" alt="Site web lent qui fait baisser vos résultats sur Google" width="1408" height="768" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <div class="bento-right stagger-grid" id="problemGrid">
+          <div class="bento-card">
+            <div class="card-icon"><i data-lucide="gauge"></i></div>
+            <h3>Site trop lent</h3>
+            <p>53% des visiteurs quittent un site qui met plus de 3 secondes à charger. Google vous pénalise aussi.</p>
+          </div>
+
+          <div class="bento-card tall">
+            <div class="card-icon"><i data-lucide="smartphone"></i></div>
+            <h3>Pas adapté au mobile</h3>
+            <p>Plus de 70% du trafic web vient du mobile. Si votre site n'est pas responsive, vous perdez la majorité de vos visiteurs.</p>
+            <div class="bento-card-visual">
+              <img src="public/images/mobile-site.jpg" alt="Site web responsive et mobile first créé par une agence web à Madagascar" width="5559" height="3706" loading="lazy" decoding="async">
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="card-icon"><i data-lucide="palette"></i></div>
+            <h3>Design vieillissant</h3>
+            <p>Un site qui semble daté renvoie une image négative de votre marque, même si vos services sont excellents.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="card-icon"><i data-lucide="mouse-pointer-click"></i></div>
+            <h3>Peu de demandes clients</h3>
+            <p>Pas de CTA visible, pas de WhatsApp, pas de formulaire : vos visiteurs ne savent pas comment vous contacter.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="card-icon"><i data-lucide="wrench"></i></div>
+            <h3>WordPress trop lourd</h3>
+            <p>Mises à jour incessantes, plugins qui ralentissent, sécurité fragile — WordPress vous coûte du temps et de l'argent.</p>
+          </div>
+
+          <div class="bento-card span-2">
+            <div class="bento-card-content">
+              <div class="card-icon"><i data-lucide="layout-dashboard"></i></div>
+              <h3>Contenus difficiles à modifier</h3>
+              <p>Vous dépendez de votre développeur pour changer un texte ou une photo. Vous perdez en autonomie et en réactivité.</p>
+            </div>
+            <div class="bento-card-visual">
+              <img src="public/images/dashboard-admin.jpg" alt="Dashboard admin pour gérer votre site web en autonomie" width="6144" height="4069" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION ===== -->
+    <section id="solution" class="container">
+      <div class="section-tag reveal">✓ Notre approche</div>
+      <h2 class="section-title-left reveal">Nous reprenons votre site et le transformons en outil clair, moderne et rentable</h2>
+      <p class="section-desc reveal">Pas de discours technique. On analyse, on propose, on construit, on livre. Et vous, vous gagnez des clients.</p>
+
+      <div class="solution-wrap reveal">
+        <ul class="solution-list">
+          <li class="solution-item">
+            <div class="solution-item-icon">1</div>
+            <div>
+              <h4>Audit complet de votre site actuel</h4>
+              <p>Nous analysons performance, design, mobile, SEO et conversion. Vous recevez un rapport clair et des recommandations.</p>
+            </div>
+          </li>
+          <li class="solution-item">
+            <div class="solution-item-icon">2</div>
+            <div>
+              <h4>Refonte design moderne & premium</h4>
+              <p>Un design sur mesure, adapté à votre secteur, avec une expérience mobile irréprochable et une identité forte.</p>
+            </div>
+          </li>
+          <li class="solution-item">
+            <div class="solution-item-icon">3</div>
+            <div>
+              <h4>WhatsApp, formulaire & CTA intelligents</h4>
+              <p>Chaque visiteur sait exactement quoi faire. Boutons WhatsApp visibles, formulaires optimisés, appel à l'action clair.</p>
+            </div>
+          </li>
+          <li class="solution-item">
+            <div class="solution-item-icon">4</div>
+            <div>
+              <h4>Performance & SEO de base</h4>
+              <p>Un site rapide, bien référencé, avec un hébergement fiable. Vous apparaissez dans les recherches locales.</p>
+            </div>
+          </li>
+          <li class="solution-item">
+            <div class="solution-item-icon">5</div>
+            <div>
+              <h4>Dashboard admin (optionnel)</h4>
+              <p>Connecté à Supabase, vous modifiez vos contenus vous-même : textes, photos, horaires, tarifs. Simple et efficace.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== NOTRE MÉTHODE ===== -->
+    <section id="methode" class="container">
+      <div class="text-center reveal">
+        <div class="section-tag">⚙️ Notre méthode</div>
+        <h2 class="section-title" style="text-align:center;">Un processus en 4 étapes</h2>
+        <p class="section-desc">De l'audit à la mise en ligne, chaque étape est pensée pour maximiser l'impact de votre site.</p>
+      </div>
+
+      <div class="method-grid stagger-grid" id="methodGrid">
+        <div class="method-step">
+          <div class="method-number">01</div>
+          <h3>Audit du site existant</h3>
+          <p>Analyse complète de votre site actuel : performance, design, mobile, SEO. Vous savez exactement ce qui ne va pas.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-number">02</div>
+          <h3>Refonte stratégique</h3>
+          <p>Nous concevons une maquette sur mesure avec un parcours utilisateur optimisé pour convertir vos visiteurs.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-number">03</div>
+          <h3>Développement propre</h3>
+          <p>Code moderne, performant et maintenable. Pas de superflu, pas de plugins inutiles — que l'essentiel.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-number">04</div>
+          <h3>Mise en ligne & optimisation</h3>
+          <p>Déploiement, configurations serveur et suivi post-livraison. Votre site tourne, on s'assure que tout est parfait.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OFFRES ===== -->
+    <section id="offres" class="container">
+      <div class="text-center reveal">
+        <div class="section-tag">💰 Nos offres</div>
+        <h2 class="section-title" style="text-align:center;">Des formules adaptées à votre budget</h2>
+        <p class="section-desc">Un investissement rentable pour un site qui vous rapporte des clients.</p>
+      </div>
+
+      <div class="offers-grid stagger-grid" id="offersGrid">
+        <div class="offer-card">
+          <div class="offer-badge">Express</div>
+          <h3>Refonte Express</h3>
+          <p>Pour les sites simples : vitrine, restaurant, service local. Design moderne, mobile, WhatsApp et formulaire.</p>
+          <div class="offer-price">à partir de 150 <small>€</small></div>
+          <ul class="offer-list">
+            <li>Design moderne & responsive</li>
+            <li>Optimisation mobile</li>
+            <li>Intégration WhatsApp</li>
+            <li>Formulaire de contact</li>
+            <li>CTA orientés conversion</li>
+            <li>Hébergement 1 an inclus</li>
+            <li>Livraison sous 7 jours</li>
+          </ul>
+          <a href="https://wa.me/261349320184" class="btn btn-primary btn-full" target="_blank">Choisir cette offre</a>
+        </div>
+
+        <div class="offer-card featured">
+          <div class="offer-badge">Recommandé</div>
+          <h3>Site + Dashboard Admin</h3>
+          <p>Pour les hôtels, restaurants, résidences et entreprises qui veulent gérer leurs contenus en autonomie.</p>
+          <div class="offer-price">à partir de 400 <small>€</small></div>
+          <ul class="offer-list">
+            <li>Tout de l'offre Express</li>
+            <li>Dashboard admin connecté (Supabase)</li>
+            <li>Gestion des contenus : textes, photos, horaires, tarifs</li>
+            <li>Pages multiples</li>
+            <li>Galerie photos / portfolio</li>
+            <li>SEO avancé</li>
+            <li>Formation au dashboard</li>
+            <li>Accompagnement 1 mois post-livraison</li>
+          </ul>
+          <a href="https://wa.me/261349320184" class="btn btn-primary btn-full" target="_blank">Choisir cette offre</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES (original) ===== -->
+    <section id="services" class="container">
+      <h2 class="section-title-left reveal">Expertises & Services</h2>
+      <div class="grid-services" id="servicesGrid">
+        <article class="card">
+          <h3>💪 Stratégie Entrepreneur</h3>
+          <p>Sites haute performance pour coachs, experts et commerces locaux cherchant une présence dominante.</p>
+          <p class="price">Dès 300€</p>
+        </article>
+        <article class="card">
+          <h3>📲 Conversion Intelligente</h3>
+          <p>Automatisation via chatbots, tunnels WhatsApp et formulaires optimisés pour convertir vos visiteurs.</p>
+          <p class="price">À partir de 125€</p>
+        </article>
+        <article class="card">
+          <h3>⚙️ Standard Premium</h3>
+          <ul>
+            <li>UI/UX Design sur mesure</li>
+            <li>Optimisation SEO & Mobile</li>
+            <li>Intégration écosystème WhatsApp</li>
+            <li>Hébergement & Mise en ligne</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="container">
+      <div class="section-tag reveal">🏗️ Réalisations</div>
+      <h2 class="section-title-left reveal">Des projets pensés pour générer des résultats</h2>
+      <p class="section-desc reveal">Chaque projet est conçu sur mesure. Voici quelques exemples de notre travail.</p>
+
+      <div class="portfolio-visual-grid stagger-grid" id="portfolioVisGrid">
+        <div class="portfolio-visual-card">
+          <div class="card-image">
+            <span class="card-image-label green">✦ Démo premium</span>
+            <img src="public/images/kalina-residence.jpg" alt="Site web hôtelier premium Kalina Résidence réalisé par Noctis Digital Forge" width="1024" height="463" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <h3>Projet hôtelier</h3>
+            <p>Site complet pour établissement hôtelier avec réservation en ligne, galerie photos et WhatsApp intégré.</p>
+            <a class="btn btn-secondary" href="https://kalina-residence.netlify.app/" target="_blank">Voir la démo →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-visual-card">
+          <div class="card-image">
+            <span class="card-image-label">✦ Projet local</span>
+            <img src="public/images/sofia-bellevue.jpg" alt="Site web restaurant premium Résidence Sofia Bellevue réalisé par Noctis Digital Forge" width="1024" height="458" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <h3>Restaurant & établissement local</h3>
+            <p>Vitrine moderne pour restaurant ou commerce de proximité avec menu, horaires et CTA WhatsApp direct.</p>
+            <a class="btn btn-secondary" href="https://sofia-bellevue.netlify.app/" target="_blank">Voir la démo →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-visual-card">
+          <div class="card-image">
+            <span class="card-image-label green">✦ Dashboard admin</span>
+            <img src="public/images/dashboard-admin.jpg" alt="Dashboard admin pour gérer votre site web en autonomie" width="6144" height="4069" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <h3>Dashboard Admin</h3>
+            <p>Interface connectée à Supabase pour gérer contenus, photos et données en toute autonomie.</p>
+            <a class="btn btn-secondary" href="https://crm-pme.vercel.app/demo" target="_blank">Voir la démo →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-visual-card">
+          <div class="card-image">
+            <span class="card-image-label green">✦ Lodge & Restaurant</span>
+            <img src="public/images/mahe-lodge.jpg" alt="Mahé Lodge — site web premium pour lodge et restaurant à Madagascar" width="1024" height="463" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <h3>Mahé Lodge</h3>
+            <p>Lodge et restaurant avec dashboard admin connecté. Site vitrine + réservations + gestion des contenus en autonomie.</p>
+            <a class="btn btn-secondary" href="https://mahe-lodge.vercel.app/" target="_blank">Voir la démo →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-visual-card">
+          <div class="card-image">
+            <span class="card-image-label">✦ Dashboard Mahé Lodge</span>
+            <img src="public/images/mahe-lodge-dashboard.png" alt="Dashboard admin sur mesure pour Mahé Lodge" width="1366" height="617" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <h3>Dashboard Admin Mahé Lodge</h3>
+            <p>Interface d'administration sur mesure pour gérer réservations, menus, photos et contenu du lodge en temps réel.</p>
+            <a class="btn btn-secondary" href="https://mahe-lodge.vercel.app/demo" target="_blank">Voir la démo →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-visual-card">
+          <div class="card-image">
+            <span class="card-image-label green">✦ Dashboard Admin Eden</span>
+            <img src="public/images/dashboard EDEN.png" alt="Dashboard admin moderne pour le site Eden Rose" width="1363" height="605" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <h3>Dashboard Admin Eden</h3>
+            <p>Interface d'administration moderne pour gérer contenus, données et paramètres en toute autonomie.</p>
+            <a class="btn btn-secondary" href="https://eden-rose-five.vercel.app/demo" target="_blank">Voir la démo →</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:600;margin-bottom:24px;letter-spacing:-0.3px;opacity:0.7;">Autres réalisations</h3>
+      <div class="grid-portfolio" id="portfolioGrid">
+        <article class="card">
+          <img src="public/images/kalina-residence.jpg" alt="Site web hôtelier Kalina Résidence avec réservation en ligne" width="1024" height="463" loading="lazy" decoding="async">
+          <h3>🏨 Kalina Résidence</h3>
+          <p>Ecosystème d'hôtèlerie complet avec système de réservation.</p>
+          <a class="btn btn-secondary" href="https://kalina-residence.netlify.app/" target="_blank">Explorer le projet</a>
+        </article>
+        <article class="card">
+          <img src="public/images/Elitefit.jpg" alt="Landing page haute conversion Elitefit Pro — coaching sportif" width="1024" height="463" loading="lazy" decoding="async">
+          <h3>🏋️ Elitefit Pro</h3>
+          <p>Landing page haute conversion pour coaching sportif haut de gamme.</p>
+          <a class="btn btn-secondary" href="https://elitefit-coach.netlify.app/" target="_blank">Explorer le projet</a>
+        </article>
+        <article class="card">
+          <img src="public/images/sofia-bellevue.jpg" alt="Résidence Sofia Bellevue — site web premium pour villa hôtelière" width="1024" height="458" loading="lazy" decoding="async">
+          <h3>🌴 Résidence Sofia Bellevue</h3>
+          <p>Villa hôtelière premium avec piscine et expérience haut de gamme.</p>
+          <a class="btn btn-secondary" href="https://sofia-bellevue.netlify.app/" target="_blank">Explorer le projet</a>
+        </article>
+        <article class="card">
+          <img src="public/images/miramar.jpg" alt="Miramar Hôtel — site web hôtelier avec réservation en ligne" width="1024" height="464" loading="lazy" decoding="async">
+          <h3>🌊 Miramar Hôtel</h3>
+          <p>Hôtel élégant en bord de mer avec réservation en ligne et confort moderne.</p>
+          <a class="btn btn-secondary" href="https://miramar-hotel0.netlify.app/" target="_blank">Explorer le projet</a>
+        </article>
+        <article class="card">
+          <img src="public/images/mahe-lodge.jpg" alt="Mahé Lodge — site web premium pour lodge et restaurant à Madagascar" width="1024" height="463" loading="lazy" decoding="async">
+          <h3>🌴 Mahé Lodge</h3>
+          <p>Lodge et restaurant avec dashboard admin connecté pour gestion autonome des contenus.</p>
+          <a class="btn btn-secondary" href="https://mahe-lodge.vercel.app/" target="_blank">Explorer le projet</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== TEMPLATES (original) ===== -->
+    <section id="templates" class="container">
+      <h2 class="section-title-left reveal">Solutions Clé en main</h2>
+      <div class="grid-portfolio" id="templatesGrid">
+        <article class="card">
+          <img src="public/images/barbershop.jpg" alt="Barbershopmania — template site web premium Dark & Gold" width="1024" height="325" loading="lazy" decoding="async">
+          <h3>💈 Barbershopmania</h3>
+          <p>Template premium Dark & Gold pour salons de prestige.</p>
+          <p class="price">45€</p>
+          <a class="btn" href="https://barbershopmania.netlify.app/" target="_blank">Démo Live</a>
+        </article>
+        <article class="card">
+          <img src="public/images/velour.jpg" alt="Velour Noctis Shop — site e-commerce élégant pour marques de mode" width="1024" height="459" loading="lazy" decoding="async">
+          <h3>🛍️ Velour Noctis Shop</h3>
+          <p>E-commerce élégant et responsive pour marques de mode.</p>
+          <p class="price">90€</p>
+          <a class="btn" href="https://velour-noctisprod.netlify.app/" target="_blank">Démo Live</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== POURQUOI NOCTIS ===== -->
+    <section id="pourquoi" class="container">
+      <div class="text-center reveal">
+        <div class="section-tag">✦ Pourquoi Noctis</div>
+        <h2 class="section-title" style="text-align:center;">Pourquoi choisir Noctis Digital Forge ?</h2>
+        <p class="section-desc">Nous ne sommes pas une agence classique. Nous construisons des outils qui marchent vraiment.</p>
+      </div>
+
+      <div class="why-grid stagger-grid" id="whyGrid">
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="target"></i></div>
+          <h3>Approche orientée résultat</h3>
+          <p>Chaque décision de design est motivée par un objectif : convertir vos visiteurs en clients.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="zap"></i></div>
+          <h3>Sites ultra-rapides</h3>
+          <p>Technologie moderne, hébergement optimisé, poids minimal. Votre site charge en moins de 2 secondes.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="layout-dashboard"></i></div>
+          <h3>Dashboard admin possible</h3>
+          <p>Vous voulez modifier vos contenus sans coder ? On vous connecte un dashboard Supabase simple d'utilisation.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="store"></i></div>
+          <h3>Adapté aux PME locales</h3>
+          <p>Hôtels, restaurants, commerces, indépendants. Nous comprenons vos besoins et votre budget.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="file-text"></i></div>
+          <h3>Communication claire</h3>
+          <p>Pas de jargon technique. On vous explique tout en français clair. Vous savez exactement ce que vous achetez.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i data-lucide="handshake"></i></div>
+          <h3>Accompagnement après mise en ligne</h3>
+          <p>Le projet ne s'arrête pas à la mise en ligne. Nous restons disponibles pour vos questions et évolutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEMOIGNAGES ===== -->
+    <section id="temoignages" class="container">
+      <div class="text-center reveal">
+        <div class="section-tag">✦ Témoignages</div>
+        <h2 class="section-title" style="text-align:center;">Ce que nos clients disent de nous</h2>
+        <p class="section-desc">Des collaborations qui parlent d'elles-mêmes. Leurs mots valent mieux que n'importe quel argument commercial.</p>
+      </div>
+
+      <div class="testimonials-grid stagger-grid" id="testimonialsGrid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">Un travail d'une dithyrambique précision. Noctis a sublimé notre identité visuelle avec une finesse que nous n'aurions jamais soupçonnée. Le résultat est absolument bluffant — nos réservations ont explosé dès la première semaine.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div class="testimonial-info">
+              <h4>Marie Rakotoarivony</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">Nous avions un site vieillissant, paresseux et sans relief. L'équipe Noctis a orchestré une métamorphose magistrale — design éblouissant, performances redoutables. Un investissement qui a transformé notre présence digitale en un véritable atout stratégique.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">HR</div>
+            <div class="testimonial-info">
+              <h4>Hugues Razafindrabe</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">La maîtrise technique est hors du commun. Dashboard intuitif, site fulgurant, et un accompagnement empreint de bienveillance. Noctis Digital Forge a offert à notre résidence le vitrine digitale qu'elle méritait — un véritable régal esthétique.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SB</div>
+            <div class="testimonial-info">
+              <h4>Sylvie Besson</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">Un investissement qui a dépassé toutes nos attentes. L'alliance de la rigueur technique et de l'élégance graphique a donné un site qui suscite l'admiration. Chaque pixel respire le soin et l'expertise — une œuvre à part entière.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">TA</div>
+            <div class="testimonial-info">
+              <h4>Thierry Andrianarivelo</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">Une collaboration des plus épanouissantes. L'équipe a su capturer l'essence de notre établissement avec une sensibilité remarquable. Le dashboard est d'une limpidité exemplaire — un bonheur d'utilisation au quotidien.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CL</div>
+            <div class="testimonial-info">
+              <h4>Claire Lesieur</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">Un professionnalisme d'une constance admirable. Du premier échange à la mise en ligne, chaque étape a été ponctuée de clarity et de maîtrise. Notre nouveau site est un véritable coup d'éclat — les retours de nos clients sont unanimes.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">PM</div>
+            <div class="testimonial-info">
+              <h4>Patrick Menalda</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="container">
+      <div class="final-cta-wrap reveal">
+        <h2>Votre site mérite mieux qu'une simple présence en ligne</h2>
+        <p>Envoyez le lien de votre site actuel et recevez un premier avis gratuit. Sans engagement, sans pression.</p>
+
+        <div class="final-cta-actions">
+          <a href="https://wa.me/261349320184" class="btn btn-whatsapp" target="_blank">💬 Envoyer sur WhatsApp</a>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Votre nom</label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Entreprise</label>
+              <input type="text" id="company" name="company" placeholder="Hôtel Exemple">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="site">Lien de votre site actuel</label>
+            <input type="url" id="site" name="site" placeholder="https://monsite.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="problem">Problème principal</label>
+              <select id="problem" name="problem">
+                <option value="">Sélectionnez...</option>
+                <option value="lent">Site trop lent</option>
+                <option value="design">Design vieillissant</option>
+                <option value="mobile">Pas adapté au mobile</option>
+                <option value="peu-de-ventes">Peu de demandes clients</option>
+                <option value="wordpress">WordPress galère</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget approximatif</label>
+              <select id="budget" name="budget">
+                <option value="">Sélectionnez...</option>
+                <option value="150">150 €</option>
+                <option value="200">200 €</option>
+                <option value="300">300 €</option>
+                <option value="400">400 €</option>
+                <option value="400+">Plus de 400 €</option>
+                <option value="incertain">Je ne sais pas encore</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (optionnel)</label>
+            <textarea id="message" name="message" placeholder="Parlez-nous de votre projet..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Envoyer ma demande d'audit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT (original) ===== -->
+    <section id="contact" class="container">
+      <div class="contact-card reveal">
+        <h2>Prêt à forger votre succès ?</h2>
+        <p>Discutons de votre projet et boostons votre visibilité dès aujourd'hui.</p>
+        <div class="contact-actions">
+          <a class="btn" href="https://wa.me/261349320184" target="_blank">Commander sur WhatsApp</a>
+          <div class="contact-info">
+            <a href="mailto:noctisfifaliana@gmail.com">✉️ noctisfifaliana@gmail.com</a>
+            <span class="separator" aria-hidden="true">|</span>
+            <a href="mailto:noctisdigitalforge@gmail.com">✉️ noctisdigitalforge@gmail.com</a>
+            <span class="separator" aria-hidden="true">|</span>
+            <a href="https://facebook.com" target="_blank" rel="noopener">FB: Razafiarijaona Jonathan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-divider" aria-hidden="true"></div>
+    <p>⚡ Noctis Digital Forge — Créateur d'impact numérique</p>
+    <p class="copyright">© 2026 Noctis Digital Forge. Tous droits réservés.</p>
+  </footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // --- Lucide icons ---
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  var nav = document.querySelector('nav');
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+  var body = document.body;
+
+  // --- Nav scroll ---
+  function updateNav() {
+    if (window.scrollY > 50) nav.classList.add('nav-scrolled');
+    else nav.classList.remove('nav-scrolled');
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  // --- Hamburger ---
+  if (hamburger && navLinks) {
+    function toggleMenu(open) {
+      var isOpen = open !== undefined ? open : !hamburger.classList.contains('active');
+      hamburger.classList.toggle('active', isOpen);
+      navLinks.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    hamburger.addEventListener('click', function() { toggleMenu(); });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() { toggleMenu(false); });
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && hamburger.classList.contains('active')) {
+        toggleMenu(false);
+        hamburger.focus();
+      }
+    });
+  }
+
+  // --- Active section ---
+  var sections = document.querySelectorAll('section[id]');
+  var sectionLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  if (sections.length && sectionLinks.length) {
+    var sectionObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          sectionLinks.forEach(function(link) {
+            var href = link.getAttribute('href');
+            link.classList.toggle('active', href === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-80px 0px 0px 0px' });
+    sections.forEach(function(section) { sectionObserver.observe(section); });
+  }
+
+  // --- Scroll reveal ---
+  var revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(function(el) {
+    revealObserver.observe(el);
+  });
+
+  // --- Stagger grids ---
+  ['problemGrid', 'methodGrid', 'offersGrid', 'portfolioVisGrid', 'whyGrid', 'servicesGrid', 'portfolioGrid', 'templatesGrid', 'testimonialsGrid'].forEach(function(id) {
+    var grid = document.getElementById(id);
+    if (grid) {
+      var gridObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            gridObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      gridObserver.observe(grid);
+    }
+  });
+
+  // --- Card mouse tracking ---
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.card, .why-card, .bento-card, .portfolio-visual-card, .testimonial-card').forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        var rect = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width * 100).toFixed(1) + '%');
+        card.style.setProperty('--my', ((e.clientY - rect.top) / rect.height * 100).toFixed(1) + '%');
+      });
+    });
+  }
+
+  // --- Forge Canvas Particles (ambient hero) ---
+  (function() {
+    var canvas = document.getElementById('forgeCanvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+    var W, H;
+    var running = true;
+    var mouseX = 0.5, mouseY = 0.5;
+
+    function resize() {
+      W = window.innerWidth;
+      H = window.innerHeight;
+      var dpr = window.devicePixelRatio || 1;
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      canvas.style.width = W + 'px';
+      canvas.style.height = H + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function Particle(type, x, y) {
+      this.type = type;
+      this.x = x !== undefined ? x : Math.random() * W;
+      this.y = y !== undefined ? y : Math.random() * H;
+      this.alive = true;
+      if (type === 'smoke') {
+        this.size = 50 + Math.random() * 100;
+        this.vx = (Math.random() - 0.5) * 0.2;
+        this.vy = -(0.05 + Math.random() * 0.1);
+        this.opacity = 0.015 + Math.random() * 0.03;
+        this.decay = 0.001 + Math.random() * 0.002;
+        this.color = [160 + Math.random() * 40 | 0, 130 + Math.random() * 30 | 0, 100 + Math.random() * 20 | 0];
+      } else if (type === 'ember') {
+        this.size = 2 + Math.random() * 3;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = -(0.2 + Math.random() * 0.4);
+        this.opacity = 0.3 + Math.random() * 0.4;
+        this.decay = 0.003 + Math.random() * 0.004;
+        this.color = Math.random() > 0.5 ? [255, 150, 50] : [255, 100, 30];
+      } else {
+        this.size = 1 + Math.random() * 2;
+        var angle = Math.random() * Math.PI * 2;
+        var speed = 2 + Math.random() * 6;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed - 2;
+        this.opacity = 0.8 + Math.random() * 0.2;
+        this.decay = 0.02 + Math.random() * 0.04;
+        this.color = Math.random() > 0.3 ? [255, 255, 220] : [255, 200, 100];
+      }
+    }
+    Particle.prototype.update = function() {
+      this.vx += (mouseX - 0.5) * 0.008;
+      if (this.type === 'smoke') { this.vy -= 0.0008; this.size += 0.05; }
+      else if (this.type === 'ember') { this.vy -= 0.002; this.vx += (Math.random() - 0.5) * 0.08; }
+      else { this.vy += 0.06; this.vx *= 0.97; }
+      this.x += this.vx; this.y += this.vy;
+      this.opacity -= this.decay;
+      if (this.opacity <= 0 || this.x < -200 || this.x > W + 200 || this.y < -200 || this.y > H + 200) this.alive = false;
+    };
+    Particle.prototype.draw = function() {
+      if (this.opacity <= 0) return;
+      var c = this.color;
+      ctx.globalAlpha = Math.min(this.opacity, 1);
+      ctx.fillStyle = 'rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')';
+      if (this.type === 'smoke') { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
+      else if (this.type === 'spark') {
+        ctx.shadowBlur = 8; ctx.shadowColor = 'rgba(255, 200, 100, 0.6)';
+        ctx.fillRect(this.x - 0.5, this.y - 0.5, this.size, this.size); ctx.shadowBlur = 0;
+      } else { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
+    };
+    function spawnAmbient() {
+      if (particles.filter(function(p) { return p.type === 'smoke'; }).length < 10 && Math.random() < 0.15)
+        particles.push(new Particle('smoke', Math.random() * W, H + 10));
+      if (particles.filter(function(p) { return p.type === 'ember'; }).length < 12 && Math.random() < 0.2)
+        particles.push(new Particle('ember', Math.random() * W, H * 0.6 + Math.random() * H * 0.4));
+    }
+    function loop() {
+      if (!running) return;
+      ctx.clearRect(0, 0, W, H);
+      spawnAmbient();
+      if (Math.random() < 0.03) {
+        var sx = Math.random() * W, sy = Math.random() * H * 0.4;
+        for (var i = 0; i < 2; i++) particles.push(new Particle('spark', sx, sy));
+      }
+      for (var i = particles.length - 1; i >= 0; i--) {
+        particles[i].update(); particles[i].draw();
+        if (!particles[i].alive) particles.splice(i, 1);
+      }
+      if (particles.length > 120) particles.splice(0, particles.length - 120);
+      requestAnimationFrame(loop);
+    }
+    loop();
+    document.addEventListener('visibilitychange', function() { running = !document.hidden; if (running) loop(); });
+    (function() {
+      var content = document.querySelector('.hero-grid');
+      if (!content) return;
+      var rafId = null;
+      var targetX = 0, targetY = 0, currentX = 0, currentY = 0;
+      document.addEventListener('mousemove', function(e) {
+        targetX = (e.clientX / W - 0.5) * 8;
+        targetY = (e.clientY / H - 0.5) * 5;
+        mouseX = e.clientX / W; mouseY = e.clientY / H;
+        if (!rafId) {
+          rafId = requestAnimationFrame(function animate() {
+            currentX += (targetX - currentX) * 0.05;
+            currentY += (targetY - currentY) * 0.05;
+            content.style.transform = 'translate(' + currentX.toFixed(1) + 'px, ' + currentY.toFixed(1) + 'px)';
+            if (Math.abs(currentX - targetX) > 0.01 || Math.abs(currentY - targetY) > 0.01) rafId = requestAnimationFrame(animate);
+            else rafId = null;
+          });
+        }
+      });
+    })();
+  })();
+
+  // --- Lightbox (click to enlarge portfolio images) ---
+  (function() {
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    var img = document.createElement('img');
+    var close = document.createElement('div');
+    close.className = 'lightbox-close';
+    close.textContent = '✕';
+    overlay.appendChild(img);
+    overlay.appendChild(close);
+    document.body.appendChild(overlay);
+
+    document.querySelectorAll('.portfolio-visual-card .card-image').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var src = card.querySelector('img').getAttribute('src');
+        if (!src) return;
+        img.setAttribute('src', src);
+        overlay.classList.add('active');
+      });
+    });
+
+    function closeLightbox() { overlay.classList.remove('active'); }
+    close.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) closeLightbox(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+  })();
+
+  // --- Form submission via WhatsApp ---
+  var form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = form.querySelector('#name').value.trim();
+      var company = form.querySelector('#company').value.trim();
+      var site = form.querySelector('#site').value.trim();
+      var problem = form.querySelector('#problem').value;
+      var budget = form.querySelector('#budget').value;
+      var message = form.querySelector('#message').value.trim();
+      var text = 'Bonjour Noctis, je souhaite un audit gratuit pour mon site :\n';
+      text += 'Nom : ' + name + '\n';
+      if (company) text += 'Entreprise : ' + company + '\n';
+      text += 'Site : ' + site + '\n';
+      if (problem) text += 'Problème : ' + problem + '\n';
+      if (budget) text += 'Budget : ' + budget + '\n';
+      if (message) text += 'Message : ' + message;
+      window.open('https://wa.me/261349320184?text=' + encodeURIComponent(text), '_blank');
+    });
+  }
+
+})();
+</script>
+
+</body>
+</html>

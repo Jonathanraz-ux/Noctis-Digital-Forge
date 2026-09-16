@@ -1,0 +1,36 @@
+<svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0a0a10"/>
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#0a0a10"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pg)"/>
+  <!-- Screen -->
+  <rect x="60" y="40" width="480" height="280" rx="16" fill="#12121a" stroke="rgba(255,80,80,0.08)" stroke-width="1"/>
+  <!-- Header -->
+  <rect x="90" y="70" width="100" height="12" rx="4" fill="#ff5050" opacity="0.3"/>
+  <rect x="90" y="92" width="160" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <!-- Downward trend chart -->
+  <polyline points="100,200 150,180 200,210 250,190 300,230 350,220 400,260 450,250 500,280" stroke="#ff5050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+  <polyline points="100,210 150,195 200,220 250,205 300,240 350,235 400,270 450,260 500,290" stroke="#ff5050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.2"/>
+  <!-- Grid -->
+  <line x1="100" y1="170" x2="500" y2="170" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="100" y1="210" x2="500" y2="210" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="100" y1="250" x2="500" y2="250" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="100" y1="290" x2="500" y2="290" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <!-- Arrow down -->
+  <path d="M430 240 L500 290 M488 276 L500 290 L472 285" stroke="#ff5050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+  <!-- Alert icon -->
+  <circle cx="510" cy="60" r="16" fill="rgba(255,80,80,0.1)" stroke="rgba(255,80,80,0.2)" stroke-width="1"/>
+  <line x1="510" y1="54" x2="510" y2="63" stroke="#ff5050" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="510" cy="68" r="1.5" fill="#ff5050"/>
+  <!-- Person silhouette -->
+  <rect x="340" y="80" width="80" height="80" rx="40" fill="#ffffff" opacity="0.03"/>
+  <circle cx="380" cy="105" r="12" fill="#ffffff" opacity="0.08"/>
+  <rect x="365" y="125" width="30" height="35" rx="8" fill="#ffffff" opacity="0.05"/>
+  <!-- Bottom data -->
+  <rect x="90" y="320" width="420" height="40" rx="8" fill="#ffffff" opacity="0.02" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="110" y="335" width="80" height="10" rx="3" fill="#ff5050" opacity="0.2"/>
+  <rect x="210" y="335" width="60" height="10" rx="3" fill="#ffffff" opacity="0.06"/>
+  <rect x="290" y="335" width="40" height="10" rx="3" fill="#ffffff" opacity="0.04"/>
+  <rect x="350" y="335" width="100" height="10" rx="3" fill="#ff5050" opacity="0.15"/>
+</svg>

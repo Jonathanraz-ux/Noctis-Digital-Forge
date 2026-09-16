@@ -1,0 +1,38 @@
+<svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#0a0a10"/>
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#0a0a10"/></linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#mg)"/>
+  <!-- Phone body -->
+  <rect x="100" y="50" width="200" height="400" rx="30" fill="#12121a" stroke="rgba(0,255,153,0.08)" stroke-width="1.5"/>
+  <rect x="100" y="50" width="200" height="400" rx="30" fill="rgba(0,255,153,0.02)"/>
+  <!-- Notch -->
+  <rect x="160" y="70" width="80" height="20" rx="10" fill="#0a0a10"/>
+  <!-- Screen -->
+  <rect x="115" y="100" width="170" height="330" rx="6" fill="#0d0d14"/>
+  <!-- Website header -->
+  <rect x="125" y="110" width="150" height="40" rx="4" fill="#ffffff" opacity="0.04"/>
+  <rect x="135" y="123" width="60" height="14" rx="4" fill="#00ff99" opacity="0.25"/>
+  <rect x="205" y="127" width="30" height="6" rx="3" fill="#ffffff" opacity="0.06"/>
+  <rect x="240" y="127" width="25" height="6" rx="3" fill="#ffffff" opacity="0.06"/>
+  <!-- Hero image area -->
+  <rect x="125" y="158" width="150" height="80" rx="4" fill="#1a1a2e"/>
+  <rect x="125" y="158" width="150" height="80" rx="4" fill="rgba(0,255,153,0.04)"/>
+  <!-- Text lines -->
+  <rect x="125" y="248" width="140" height="8" rx="4" fill="#ffffff" opacity="0.1"/>
+  <rect x="125" y="264" width="120" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <rect x="125" y="280" width="130" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <rect x="125" y="296" width="100" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <!-- CTA button -->
+  <rect x="125" y="320" width="150" height="36" rx="18" fill="#00ff99" opacity="0.15"/>
+  <rect x="170" y="334" width="60" height="8" rx="4" fill="#00ff99" opacity="0.3"/>
+  <!-- Bottom nav -->
+  <rect x="125" y="370" width="150" height="1" fill="#ffffff" opacity="0.06"/>
+  <rect x="140" y="382" width="20" height="20" rx="4" fill="#00ff99" opacity="0.2"/>
+  <rect x="175" y="382" width="20" height="20" rx="4" fill="#ffffff" opacity="0.05"/>
+  <rect x="210" y="382" width="20" height="20" rx="4" fill="#ffffff" opacity="0.05"/>
+  <rect x="245" y="382" width="20" height="20" rx="4" fill="#ffffff" opacity="0.05"/>
+  <!-- Ambient glow -->
+  <circle cx="200" cy="250" r="120" fill="rgba(0,255,153,0.03)"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0a0a10"/>
+  <defs>
+    <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#0a0a10"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#rg)"/>
+  <!-- Interior wall -->
+  <rect x="40" y="100" width="520" height="280" rx="8" fill="#0d0d14" stroke="rgba(0,255,153,0.04)" stroke-width="1"/>
+  <!-- Window -->
+  <rect x="220" y="80" width="160" height="120" rx="8" fill="#0a0a10" stroke="rgba(255,215,0,0.08)" stroke-width="1"/>
+  <rect x="220" y="80" width="160" height="120" rx="8" fill="rgba(255,215,0,0.02)"/>
+  <line x1="300" y1="80" x2="300" y2="200" stroke="rgba(255,215,0,0.04)" stroke-width="1"/>
+  <!-- View outside - warm glow -->
+  <circle cx="300" cy="140" r="30" fill="rgba(255,215,0,0.04)"/>
+  <!-- Table -->
+  <rect x="200" y="260" width="200" height="12" rx="6" fill="#1a1a2e" stroke="rgba(255,215,0,0.04)" stroke-width="0.5"/>
+  <rect x="230" y="272" width="8" height="60" rx="2" fill="#1a1a2e"/>
+  <rect x="362" y="272" width="8" height="60" rx="2" fill="#1a1a2e"/>
+  <!-- Plate -->
+  <circle cx="270" cy="252" r="16" fill="#ffffff" opacity="0.04" stroke="rgba(0,255,153,0.08)" stroke-width="0.5"/>
+  <circle cx="270" cy="252" r="8" fill="#ffffff" opacity="0.02"/>
+  <!-- Glass -->
+  <rect x="298" y="238" width="10" height="20" rx="3" fill="#ffffff" opacity="0.03" stroke="rgba(0,255,153,0.06)" stroke-width="0.5"/>
+  <!-- Candle -->
+  <rect x="240" y="245" width="4" height="12" rx="1" fill="#1a1a2e"/>
+  <circle cx="242" cy="243" r="3" fill="rgba(255,215,0,0.2)"/>
+  <circle cx="242" cy="243" r="1.5" fill="rgba(255,215,0,0.35)"/>
+  <!-- Chair left -->
+  <rect x="195" y="280" width="40" height="8" rx="3" fill="#1a1a2e"/>
+  <rect x="200" y="288" width="6" height="45" rx="2" fill="#1a1a2e"/>
+  <rect x="224" y="288" width="6" height="45" rx="2" fill="#1a1a2e"/>
+  <!-- Chair right -->
+  <rect x="365" y="280" width="40" height="8" rx="3" fill="#1a1a2e"/>
+  <rect x="370" y="288" width="6" height="45" rx="2" fill="#1a1a2e"/>
+  <rect x="394" y="288" width="6" height="45" rx="2" fill="#1a1a2e"/>
+  <!-- Ambient warm glow -->
+  <circle cx="270" cy="252" r="60" fill="rgba(255,215,0,0.03)"/>
+  <circle cx="242" cy="243" r="40" fill="rgba(255,215,0,0.03)"/>
+  <!-- Wall art -->
+  <rect x="470" y="140" width="50" height="60" rx="4" fill="#0a0a10" stroke="rgba(0,255,153,0.04)" stroke-width="0.5"/>
+  <circle cx="495" cy="165" r="8" fill="rgba(0,255,153,0.06)"/>
+  <!-- Plant -->
+  <rect x="130" y="280" width="6" height="40" rx="2" fill="#1a1a2e"/>
+  <circle cx="133" cy="275" r="15" fill="rgba(0,255,153,0.04)"/>
+  <circle cx="126" cy="268" r="10" fill="rgba(0,255,153,0.03)"/>
+  <circle cx="140" cy="268" r="10" fill="rgba(0,255,153,0.03)"/>
+</svg>
